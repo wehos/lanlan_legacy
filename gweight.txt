@@ -1,0 +1,1 @@
+/workspace/GPT-SoVITS/GPT_weights/alldata_nodpo_0.2-e8.ckpt

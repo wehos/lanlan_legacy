@@ -1,0 +1,11 @@
+{%- for message in messages %}
+      {%- if message['role'] == 'system' -%}
+          {{- '' + message['content'] + '\n\n' -}}
+      {%- else -%}
+          {%- if message['role'] == 'human' -%}
+              {{-'### Human:\n' + message['content'] + '\n\n'-}}
+          {%- else -%}
+              {{-'### Assistant:\n' + message['content'] + '\n\n' -}}
+          {%- endif -%}
+      {%- endif -%}
+  {%- endfor -%}
